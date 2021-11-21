@@ -23,6 +23,7 @@ document.getElementById("button").addEventListener("click", function password ()
                 console.log({lower, upper, number, special})
 
                 let temp = String()
+                console.log(temp)
 
                 if (lower) temp += "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toLowerCase()
                 if (upper) temp += "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -31,6 +32,7 @@ document.getElementById("button").addEventListener("click", function password ()
 
                 console.log(temp.length)
                 var out = String()
+                console.log(out);
 
                 for (let i = 0; i < passwordLength; i++) {
                     out += temp[Math.floor(Math.random() * (temp.length))]
