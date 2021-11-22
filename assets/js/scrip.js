@@ -59,13 +59,15 @@ document.getElementById("button").addEventListener("click", function password ()
                         //this will display the new password before we display it on the webpage
                         console.log(out)
                         console.log(finalpassword)
-                        //this is how it will get on web-page
+                        //this is how the new password will get on web-page
                         finalpassword.innerHTML = out
 
                 }
             }else {
                 //this will only show up if you choose a number less than 8 and greater than 128
                 console.log(" this will not work ");
+                alert("Invalid Entry, Please try again! ")
+                return password();
             }
 
         }
